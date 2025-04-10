@@ -164,4 +164,11 @@ body {
   }
   
 
+  video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
   

@@ -194,25 +194,49 @@
   <!-- Projekty w Trakcie -->
   <div id="ongoing" class="tabcontent">
     <h2>Projekty w Trakcie</h2>
+    <p>(Mogą nie znajdować się jeszcze na GitHubie)</p>
     <div class="subnav">
-      <a href="#" onclick="openOngoingSubTab('ongoing1')">1</a>
-      <a href="#" onclick="openOngoingSubTab('ongoing2')">2</a>
-      <a href="#" onclick="openOngoingSubTab('ongoing3')">3</a>
+      <a href="#" onclick="openOngoingSubTab('ongoing1')">Mini gra</a>
+      <a href="#" onclick="openOngoingSubTab('ongoing2')">Wykrywanie obiektu</a>
+      <a href="#" onclick="openOngoingSubTab('ongoing3')">Program do screenów</a>
       <a href="#" onclick="openOngoingSubTab('ongoing4')">4</a>
       <a href="#" onclick="openOngoingSubTab('ongoing5')">5</a>
     </div>
     <div id="ongoing1" class="subtabcontent" style="display: block;">
-      <h3>Projekt 1</h3>
-      <p>wpisz_tekst</p>
+      <h3>Mini gra</h3>
+      <p>Prosta gra stworzona w celu zaznajomienia z Pythonem.</p>
+      <p>Zasady gry opierają się na losowym przydzielaniu ról obiektom – jedna flaga ucieka, druga ją goni – wybór flag będących obiektem, który ucieka oraz goni jest przypadkowa.</p>
+      <figure>
+        <img src="mini_gra1.png" alt="x" width="600">
+        <img src="mini_gra2.png" alt="x" width="600">
+        <figcaption>Wygląd mini gry </figcaption>
+      </figure>
     </div>
+
     <div id="ongoing2" class="subtabcontent">
-      <h3>Projekt 2</h3>
-      <p>wpisz_tekst</p>
+      <h3>Program do screenów</h3>
+      <p>Stworzyłem aplikację do automatycznego wykonywania zrzutów ekranu, która stanowi fundament dla rozwoju kolejnych rozwiązań opartych na analizie obrazów.</p>
+      <figure>
+        <img src="Screenshot1.png" alt="Zdjęcie zaszumione" width="600">
+        <figcaption>lewy przycisk myszy wywołuje zrzut ekranu</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="Screenshot2.png" alt="Zdjęcie odszumione" width="600">
+        <figcaption>program robi zrzut ekranu co określony czas</figcaption>
+      </figure>
     </div>
+
     <div id="ongoing3" class="subtabcontent">
-      <h3>Projekt 3</h3>
-      <p>wpisz_tekst</p>
+      <h3>Wykrywanie obiektu</h3>
+      <p>Projekt ma na celu wykrywanie obiektu jakim jest postać w grze, jest on w trakcie doskonalenia.</p>
+      <p>Obecnie znajduje się on na etapie doskonalenia. Wykorzystano około 150 zdjęć postaci, co na ten moment nie zapewnia jeszcze pełnej detekcji, jednak uzyskane rezultaty są już satysfakcjonujące, co prezentuje załączone wideo:</p>
+      <video controls width="600">
+        <source src="wykrywanie_w_cs2.mp4" type="video/mp4">
+        Twój przeglądarka nie obsługuje wideo HTML5.
+      </video>
     </div>
+
     <div id="ongoing4" class="subtabcontent">
       <h3>Projekt 4</h3>
       <p>wpisz_tekst</p>
@@ -241,8 +265,7 @@
   <h2>  Pomysły na Projekty własne</h2>
   <ul>
     <li>wykorzystać rozpoznawanie obiektu do namierzania celu myszką</li> 
-    <li></li> 
-    <li></li> 
+    <li></li>  
   </ul>
   </div>
   <script src="script.js"></script>
