@@ -218,7 +218,8 @@
 
     <div id="ongoing2" class="subtabcontent">
       <h3>Program do screenów</h3>
-      <p>Stworzyłem aplikację do automatycznego wykonywania zrzutów ekranu, która stanowi fundament dla rozwoju kolejnych rozwiązań opartych na analizie obrazów.</p>
+      <p>Stworzyłem program do automatycznego wykonywania zrzutów ekranu, która stanowi fundament dla rozwoju kolejnych rozwiązań opartych na analizie obrazów.</p>
+      <p>Ten program posłużył mi jako główny element utworzenia bazy danych postaci jednej z gier, która miała być elementem szukanym przez program w zakładce <b>Wykrywanie obiektu</b>.</p>
       <figure>
         <img src="Screenshot1.png" alt="Zdjęcie zaszumione" width="600">
         <figcaption>lewy przycisk myszy wywołuje zrzut ekranu</figcaption>
@@ -231,9 +232,10 @@
     </div>
 
     <div id="ongoing3" class="subtabcontent">
-      <h3>Wykrywanie obiektu</h3>
-      <p>Projekt ma na celu wykrywanie obiektu jakim jest postać w grze.</p>
-      <p>Obecnie znajduje się on na etapie doskonalenia. Wykorzystano około 150 zdjęć postaci, co na ten moment nie zapewnia jeszcze pełnej detekcji, jednak uzyskane rezultaty są już satysfakcjonujące, co prezentuje załączone wideo:</p>
+      <h3>Detekcja obiektu</h3>
+      <p>Projekt ma na celu wykrywanie postaci w grze z wykorzystaniem modelu detekcji obiektów. Obecnie znajduje się na etapie dalszej optymalizacji. W kolejnych etapach planowane jest rozszerzenie funkcjonalności o automatyczne śledzenie wykrytego obiektu za pomocą ruchu kursora myszy.</p>
+  
+  <p>Model trenowano na zbiorze około 150 obrazów. Choć liczba danych nie pozwala jeszcze na pełną skuteczność detekcji, uzyskane rezultaty są satysfakcjonujące i potwierdzają poprawność przyjętej koncepcji, co przedstawia załączone nagranie:</p>
       <video controls width="600">
         <source src="wykrywanie_w_cs2.mp4" type="video/mp4">
         Twój przeglądarka nie obsługuje wideo HTML5.
@@ -242,8 +244,11 @@
     </div>
 
     <div id="ongoing4" class="subtabcontent">
-      <h3>Projekt 4</h3>
-      <p>W_trakcie</p>
+      <h3>Detekcja obiektu + automatyczny ruch kursora</h3>
+      <p>Projekt stanowi rozwinięcie systemu detekcji obiektów poprzez implementację mechanizmu automatycznego przemieszczania kursora w kierunku wykrytego celu. Testy przeprowadzono w środowisku treningowym (Aim Lab), gdzie obiekty mają jednolity wygląd, lecz różnią się rozmiarem.</p>
+      <p>W celu zwiększenia stabilności działania wprowadzono ograniczenie obszaru aktywnej detekcji do określonej odległości od aktualnej pozycji kursora. Po spełnieniu warunku odległościowego kursor przemieszcza się w wyznaczone współrzędne celu.</p>
+      <p>Program działa na podstawie analizy obrazu z udostępnionego ekranu. Ze względu na wysoką dynamikę obiektów system nie zawsze nadąża z pełną precyzją pozycjonowania, aczkolwiek precyzyjność będzie dalszym celem mojego projektu.</p>
+      <p>W porównaniu do poprzedniego projektu zwiększenie zbiotu treningowego do około 600obrazów oraz jednolity obiekt zapewniły wysoką skuteczność detekcji.</p>
     </div>
     <div id="ongoing5" class="subtabcontent">
       <h3>Projekt 5</h3>
