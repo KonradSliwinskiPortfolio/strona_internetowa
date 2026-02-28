@@ -7,7 +7,7 @@
   <script src="./script.js"></script>
 </head>
 <body>
-  <!-- Główna nawigacja -->
+  <!-------------------------------------------------- Główna nawigacja -->
   <div class="navbar">
     <a href="#" onclick="openTab('home')">CV</a>
     <a href="#" onclick="openTab('cover')">list motywacyjny</a>
@@ -16,16 +16,15 @@
     <a href="#" onclick="openTab('ideas')">pomysły_na_projekty</a>
   </div>
 
-  <!-- CV -->
+  <!-------------------------------------------------------- CV -->
 
   <div id="home" class="tabcontent active">
-     <!-- Przyciski wyboru języka -->
   <div class="language-switcher">
     <button onclick="switchLanguage('PL')">PL</button>
     <button onclick="switchLanguage('ENG')">ENG</button>
   </div>
 
-  <!-- Polskie CV -->
+  <!-------------------------------------------------- Polskie CV -->
   <div id="cv-pl" class="cv-language">
     <div class="cv-container">
       <div class="cv-container">
@@ -134,7 +133,7 @@
     </div>
   </div>
 
-  <!-- Angielskie CV -->
+  <!-------------------------------------------------- Angielskie CV -->
   <div id="cv-eng" class="cv-language" style="display:none;">
     <div class="cv-container">
       <div class="cv-container">
@@ -244,10 +243,8 @@
     </div>
   </div>
 
-
-  <!-- List motywacyjny -->
+  <!-------------------------------------------------- List motywacyjny -->
   <div id="cover" class="tabcontent">
-    <!-- <h2> tytuł --> 
     <p>Szanowni Państwo,</p>
     <p>Jestem absolwentem kierunku Automatyka i Robotyka. Uczestnicząc w projektach z zakresu automatycznego spawania laserowego oraz weryfikacji poprawności klasyfikacji obiektu przy użyciu algorytmów Machine Learning w Pythonie (autoenkoder, YOLOv8, ResNet-18, ResNet-50), rozwinąłem umiejętności pracy w zespole, dotrzymywania terminów oraz dokładności w realizacji zadań. Ponadto zdobyłem praktyczną wiedzę z zakresu programowania ścieżek spawania (G-CODE), obsługi przyrządów pomiarowych, a z zakresu ML budowania oraz trenowania modeli, implementacji detekcji obiektów, walidacji modeli, przetwarzania obrazów w celu rozpoznawania obiektów w czasie rzeczywistym.</p>
     <p>Moje podstawy teoretyczne oraz praktyczne pozwolą mi szybko wdrożyć się do współpracy nad nowymi projektami i zrozumieć kluczowe wyzwania i efektywnie je rozwiązywać. </p>
@@ -256,7 +253,7 @@
     <p>Z poważaniem,</p>
     <p>Konrad Śliwiński</p>
   </div>
-  <!-- Projekty -->
+  <!------------------------------------------------------ Projekty -->
   <div id="projects" class="tabcontent">
     <h2>Każdy z programów wykorzystano do rozpoznawania głowic spawalniczych takich jak:
       <ul>
@@ -321,7 +318,7 @@
       </figure>
     </div>
   </div>
-  <!-- Projekty w Trakcie -->
+  <!-------------------------------------------------- Projekty w Trakcie -->
   <div id="ongoing" class="tabcontent">
     <h2>Projekty w Trakcie</h2>
     <p>(Mogą nie znajdować się jeszcze na GitHubie)</p>
@@ -382,7 +379,7 @@
       <p>W_trakcie</p>
     </div>
   </div>
-  <!-- Pomysły na Projekty-->
+  <!-------------------------------------------------- Pomysły na Projekty-->
   <div id="ideas" class="tabcontent">
     <h2>Pomysły na Projekty biznesowe</h2>
     <p> Sprawdzanie z wykorzystaniem kamer czy:</p>
