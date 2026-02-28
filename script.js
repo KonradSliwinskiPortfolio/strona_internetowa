@@ -36,3 +36,16 @@ function openOngoingSubTab(subTabName) {
 document.addEventListener("DOMContentLoaded", function() {
     openTab('home');
 });
+
+function switchLanguage(lang) {
+  const pl = document.getElementById('cv-pl');
+  const eng = document.getElementById('cv-eng');
+
+  if(lang === 'PL') {
+    pl.style.display = 'block';
+    eng.style.display = 'none';
+  } else if(lang === 'ENG') {
+    pl.style.display = 'none';
+    eng.style.display = 'block';
+  }
+}
